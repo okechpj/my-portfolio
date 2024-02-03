@@ -1,0 +1,14 @@
+Nvabar
+- The nav bar disapears due to the line 429
+- it appears horizontally
+--use the bootstrap navbar instead 
+
+Profile image
+-- choose a better profile image 
+--space btwn profile img and hi is too wide
+
+small screens
+--on smaller screens, text is shrunk too much
+
+images
+--look for images to replace the cat images
