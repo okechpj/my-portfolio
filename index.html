@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!--boxicon link-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery.js"></script>
     <title>Peter Okech</title>
 </head>
 <body>
@@ -34,27 +36,25 @@
         </nav>
     </header>
 
-        
-    </dic>
     <main class="l-main container">
-        <section class="home bd-grid" id="home">
+        <section class="home" id="home">
             <div class="home_left">
                 <div class="home_da">
-                    <h1 class="home_title">Hi, <br>I am <span class="home_title-color">Peter</span> </h1>
+                    <h1 class="home_title">Hi, <br>I am <span class="home_title-color">Peter</span><br> <span>A Web Developer</span> </h1>
                     <a href="#contact" class="button">Contact</a>
-                 </div>
+                </div>
     
-                 <div class="home_social">
+                <div class="home_social">
                     <a href="https://www.linkedin.com/in/peter-okech-841966239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="home_social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://x.com/PeterOkech8?t=_L-I9UE97UoygQu_h6SHog&s=08" target="_blank" class="home_social-icon"><i class='bx bxl-twitter'></i></a>
                     <a href="https://github.com/okechpj" target="_blank" class="home_social-icon"><i class='bx bxl-github'></i></a>
-                 </div>
+                </div>
             </div>
             
 
-             <div class="home_img">
-                <img src="images/PASSPORT PHOTO.jpg" alt="home-image">
-             </div>
+            <div class="home_img">
+                <img src="images/PASSPORT_PHOTO-removebg-preview.png" alt="home-image">
+            </div>
         </section>
 
 
@@ -111,42 +111,51 @@
             <div class="skills_data_all">
                 <div class="skills_data1">
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-html5 skills_icon'></i>
-                            <span class="skills_name">HTML5</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-html5 skills_icon'></i>
+                                <span class="skills_name">HTML5</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">95%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">95%</span>
-                        </div>
+                       
     
                         <div class="skills_bar skills_html"></div>
                             
                     </div>
     
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-css3 skills_icon'></i>
-                            <span class="skills_name">CSS3</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-css3 skills_icon'></i>
+                                <span class="skills_name">CSS3</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">85%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">85%</span>
-                        </div>
+                       
     
                         <div class="skills_bar skills_css"></div>
                             
                     </div>
     
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-javascript skills_icon'></i>
-                            <span class="skills_name">JavaScript</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-javascript skills_icon'></i>
+                                <span class="skills_name">JavaScript</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">65%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">65%</span>
-                        </div>
+                       
     
                         <div class="skills_bar skills_js"></div>
                             
@@ -155,42 +164,51 @@
 
                 <div class="skills_data2">
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-python skills_icon'></i> 
-                            <span class="skills_name">Python</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-python skills_icon'></i> 
+                                <span class="skills_name">Python</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">55%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">55%</span>
-                        </div>
+                       
     
                         <div class="skills_bar skills_python"></div>
                             
                     </div>
     
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-php skills_icon'></i>
-                            <span class="skills_name">PHP</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-php skills_icon'></i>
+                                <span class="skills_name">PHP</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">50%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">50%</span>
-                        </div>
+                        
     
                         <div class="skills_bar skills_php"></div>
                             
                     </div>
     
                     <div class="skills_data">
-                        <div class="skills_names">
-                            <i class='bx bxl-postgresql skills_icon' ></i>
-                            <span class="skills_name">SQL</span>
+                        <div class="skill">
+                            <div class="skills_names">
+                                <i class='bx bxl-postgresql skills_icon' ></i>
+                                <span class="skills_name">SQL</span>
+                            </div>
+        
+                            <div>
+                                <span class="skills_percentage">65%</span>
+                            </div>
                         </div>
-    
-                        <div>
-                            <span class="skills_percentage">65%</span>
-                        </div>
+                        
     
                         <div class="skills_bar skills_sql"></div>
                             
@@ -206,19 +224,35 @@
 
             <div class="work_container bd-grid">
                 <div class="work_img">
-                    <img src="images/cat7.jpg" alt="">
+                    <a href="https://okechpj.github.io/myDiary/hello.html" target="_blank">
+                        <img src="images/diary.jpeg" alt="">
+                        <h5>My Diary App </h5>
+                    </a>
+                   
                 </div>
 
                 <div class="work_img">
-                    <img src="images/cat7.jpg" alt="">
+                    <a href="https://okechpj.github.io/my-weather-app/" target="_blank">
+                        <img src="images/weather3.jpeg" alt="">
+                        <h5>Weather App</h5>
+                    </a>
+                 
                 </div>
 
                 <div class="work_img">
-                    <img src="images/cat7.jpg" alt="">
+                    <a href="https://okechpj.github.io/amazon-clone/" target="_blank">
+                        <img src="images/projects/proj4.jpeg" alt="">
+                        <h5>Amazon-clone App</h5>
+                    </a>
+               
                 </div>
 
                 <div class="work_img">
-                    <img src="images/cat7.jpg" alt="">
+                    <a href="https://okechpj.github.io/QRgenerator/qr.html" target="_blank">
+                        <img src="images/qr-code.png" alt="">
+                        <h5>My QR Code Generator</h5>
+                    </a>
+                 
                 </div>
             </div>
         </section>
@@ -236,24 +270,24 @@
                 </form>
             </div>
         </section>
-
-
-        <footer class="footer">
-            <p class="footer_title">Peter</p>
-
-            <div class="footer_socials">
-                <a href="#" class="footer_icon"><i class='bx bxl-twitter'></i></a>
-                <a href="#" class="footer_icon"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#" class="footer_icon"><i class='bx bx-phone-call'></i></a>
-            </div>
-
-            <p>&#169; 2024 copyright all right reserved</p>
-        </footer>
-
     </main>
+
+
+    <footer class="footer">
+        <p class="footer_title">Peter</p>
+
+        <div class="footer_socials">
+            <a href="#" class="footer_icon"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="footer_icon"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#" class="footer_icon"><i class='bx bx-phone-call'></i></a>
+        </div>
+
+        <p>&#169; 2024 copyright all right reserved</p>
+    </footer>
+
     
     <!--bootstrap jss-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
     <!--Scroll reveal-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!--internal js file-->

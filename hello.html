@@ -1,0 +1,80 @@
+<header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#home" class="nav_logo">Peter</a>
+        </div>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
+                <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
+                <li class="nav_item"><a href="#work" class="nav_link">Projects</a></li>
+                <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+@media screen and (max-width:768px){
+    .nav_menu ul{
+        display: none;
+    }
+    .nav_toggle{
+        display: block;
+    }
+}
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_menu li{
+    display: inline;
+    margin-right: 20px;
+}
+.nav_toggle{
+    display: none;
+}
+.nav_toggle .bx{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav_logo{
+    color: var(--second-color);
+}
+.nav_toggle{
+    color: var(--second-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.show{
+    right: 0;
+}

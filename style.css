@@ -73,7 +73,7 @@ img{
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-top: var(--mb-2);
-    margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-6);
     text-align: center;
 }
 
@@ -94,15 +94,6 @@ img{
     padding-bottom: 2rem;
 }
 
-.bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100px;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
-}
 
 .l-header{
     width: 100%;
@@ -110,101 +101,137 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    background-color: #636262;
+    box-shadow: 0 3px 5px rgba(21, 26, 31, 0.3);
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .nav{
-    height: var(--header-height);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
+    box-shadow: 0 3px 5px rgba(21, 26, 31, 0.3);
+    padding-left: 20px;
+    padding-right: 100px;
+    width: auto;
+
 }
 
-@media screen and (min-width: 768px){
+.nav_menu {
+    
+    margin-top: .5rem;
+    transition: .5s;
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: space-between;
+    margin-left:20px;
+   
+}
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_list ul{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+.nav_list  a{
+    color: black;
+    padding-left: 40px;
+}
+.nav_list ul.show{
+    display: flex;
+    flex-direction: row;
+}
+.nav_item{
+    margin-bottom: var(--mb-4);
+}
+.nav_logo{
+   margin-bottom: 10rem;
+    color: var(--second-color);
+    position: relative;
+    bottom: 10px;
+}
+.show{
+    display: none;
+}
+.nav_toggle{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
     .nav_menu{
         position: fixed;
         top: var(--header-height);
-        right: -100%;
+        right: 0;
         width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--second-color);
         transition: .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav_menu.show{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .nav_toggle{
+        display: block;
+        color: var(--second-color);
+        font-size: 2.5rem;
+        cursor: pointer;
+        border: 2px solid red;
+    }
+    .nav_list  a{
+        color: white;
+       
+    }
+    .active::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 0.18rem;
+        right: 2rem;
+        top: 2rem;
+        background-color: var(--first-color);
+    }
+    .nav_menu.show {
+        display: flex; /* Show the navigation menu when the 'show' class is present */
+        flex-direction: column;
+    }
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    
+    .show{
+        right: 0;
     }
 }
 
-/* Your existing styles... */
 
-.nav_menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav_menu.show {
-    display: block; /* Show the navigation menu when the 'show' class is present */
-}
-
-.nav_list{
-    display: flex;
-    flex-direction: row;
-}
-.nav_list.show{
-    display: flex;
-    flex-direction: row;
-}
-
-
-.nav_item{
-    margin-bottom: var(--mb-4);
-
-}
-.nav_link{
-    position: relative;
-    color: #fff;
-}
-.nav_link:hover{
-    position: relative;
-}
-.nav_link:hover::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0.18rem;
-    left: 0;
-    background-color: var(--first-color);
-}
-
-.nav_logo{
-    color: var(--second-color);
-}
-.nav_toggle{
-    color: var(--second-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-.active::after{
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 0.18rem;
-    left: 0;
-    top: 2rem;
-    background-color: var(--first-color);
-}
-
-.show{
-    right: 0;
-}
 
 .home{
-    height: calc(100vh - 3rem);
-    row-gap: 1rem;
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .home_data{
     align-self: center;
@@ -230,7 +257,6 @@ img{
 }
 
 .home_img{
-    position: absolute;
     right:0;
     bottom: 0;
     width: 295px;
@@ -291,21 +317,26 @@ img{
 }
 .skills_data{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     font-weight: var(--font-semi);
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
-    
 }
+.skill{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
 .skills_name{
     padding-right: 100px;
 }
-@media screen() {
-    
-}
+
 
 .skills_data_all{
     display: flex;
@@ -326,13 +357,30 @@ img{
     align-items: center;
 }
 .skills_bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
     background-color: var(--first-color);
     height: .25rem;
     border-radius: .5rem;
     z-index: var(--z-back);
+    margin-top: .5rem;
+    
+}
+.skills_html{
+    width: 100%;
+}
+.skills_css{
+    width: 100%;
+}
+.skills_js{
+    width: 100%;
+}
+.skills_python{
+    width: 100%;
+}
+.skills_php{
+    width: 100%;
+}
+.skills_sql{
+    width: 100%;
 }
 
 .work{
@@ -367,9 +415,13 @@ img{
     transform:scale(1.1);
 }
 @media screen and (max-width: 768px) {
-    .work_img {
-        flex: 60%; /* Make each item take 100% width on smaller screens */
+    .work_container {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
+   
 }
 
 .contact_container{
@@ -488,41 +540,11 @@ img{
     display: block;
 }
 
-.section-title{
-    position: relative;
-    font-size: var(--h2-font-size);
-    color: var(--first-color);
-    margin-top: var(--mb-2);
-    margin-bottom: var(--mb-4);
-    text-align: center;
-}
-
-.section-title::after{
-    position: absolute;
-    content: "";
-    width: 64px;
-    height: 0.18rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 2rem;
-    background-color: var(--first-color);
-}
-
 .section{
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
-.bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100px;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: var(--mb-2);
-    margin-right: var(--mb-2);
-}
 
 .l-header{
     width: 100%;
@@ -533,16 +555,24 @@ img{
     background-color: #fff;
     box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
+
+.bd-grid{
+  
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap:2rem;
+    width: 100%;
+   
+}
 .nav{
     height: var(--header-height);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-semi);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .nav_menu{
         position: fixed;
         top: var(--header-height);
@@ -555,30 +585,8 @@ img{
     }
 }
 
-/* Your existing styles... */
-
-.nav_menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav_menu.show {
-    display: block; /* Show the navigation menu when the 'show' class is present */
-}
-
-.nav_list{
-    display: flex;
-    flex-direction: row;
-}
-.nav_list.show{
-    display: flex;
-    flex-direction: row;
-}
-
-
 .nav_item{
     margin-bottom: var(--mb-4);
-
 }
 .nav_link{
     position: relative;
@@ -593,9 +601,9 @@ img{
     width: 100%;
     height: 0.18rem;
     left: 0;
+    top: 2rem;
     background-color: var(--first-color);
 }
-
 .nav_logo{
     color: var(--second-color);
 }
@@ -613,19 +621,10 @@ img{
     top: 2rem;
     background-color: var(--first-color);
 }
-
 .show{
     right: 0;
 }
 
-.home{
-    height: calc(100vh - 3rem);
-    row-gap: 1rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 .home_data{
     align-self: center;
 }
@@ -638,7 +637,9 @@ img{
 }
 .home_social{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 200px;
     margin-top: 20px;
 }
 .home_social-icon{
@@ -649,14 +650,25 @@ img{
 
 }
 
-.home_img{
-    position: absolute;
-    right:0;
-    bottom: 0;
-    width: 295px;
-}
-.home_img img{
-    border-radius: 50%;
+@media screen and (max-width:768px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .home_social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 20px;
+    }
+    .home_img{
+        display: none;
+    }
 }
 .button{
     display: inline-block;
@@ -724,6 +736,17 @@ img{
     align-items: center;
     margin-top: 25px;
 }
+@media screen and (max-width: 768px){
+    .skills_data_all{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills_data1{
+        margin-left: 60px;
+    }
+}
 #skills h3{
     text-align: center;
 }
@@ -736,15 +759,7 @@ img{
     display: flex;
     align-items: center;
 }
-.skills_bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: var(--first-color);
-    height: .25rem;
-    border-radius: .5rem;
-    z-index: var(--z-back);
-}
+
 
 .work{
     text-align: center;
@@ -779,7 +794,11 @@ img{
 }
 @media screen and (max-width: 768px) {
     .work_img {
-        flex: 60%; /* Make each item take 100% width on smaller screens */
+        flex: 40%; /* Make each item take 100% width on smaller screens */
+        transition: 1s;
+    }
+    .work_img:hover{
+        transform:scale(1.1);
     }
 }
 
@@ -829,9 +848,17 @@ img{
     margin: 0 var(--mb-2);
 }
 
-@media screen and (mix-width: 758px){
-    body{
+@media screen and (max-width: 758px){
+    *{
         margin: 0;
+        padding: 0;
+    }
+    body{
+       margin: 0;
+        padding: 0;
+    }
+    main{
+        margin-left: 20px;
     }
     .section{
         padding-top: 4rem;
@@ -843,6 +870,7 @@ img{
     .section-title::after{
         width: 80px;
         top: 3rem;
+        bottom: 3rem;
     }
     .nav{
         height: calc(var(--header-height) + 1rem);
@@ -857,9 +885,7 @@ img{
     .nav_link{
         color: var(--second-color);
     }
-    .home{
-        height: 100vh;
-    }
+   
     .home_data{
         align-self: flex-end;
     }
@@ -872,10 +898,6 @@ img{
     .home_social-icon{
         margin-bottom: 0;
         margin-right: var(--mb-4);
-    }
-    .home_img{
-        width: 457px;
-        bottom: 15%;
     }
     .about_container{
         grid-template-columns: repeat(2,1fr);
@@ -894,24 +916,10 @@ img{
 }
 
 @media screen and (min-width: 1024px){
-    .bg-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
+   
     .home_img{
         right: 10%;
     }
 }
 
-
-
-@media screen and (min-width: 1024px){
-    .bg-grid{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .home_img{
-        right: 10%;
-    }
-}
 
