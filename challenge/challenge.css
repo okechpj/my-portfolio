@@ -1,0 +1,468 @@
+/* ==========================================================================
+   100 Days of DevOps Challenge - Documentation Stylesheet
+   SavannaStack Technologies Capstone Project
+   ========================================================================== */
+
+/* Documentation Layout Specifics */
+.challenge-body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.7;
+    padding-top: var(--header-height);
+}
+
+.challenge-header {
+    border-bottom: 1px solid var(--border-subtle);
+    background: rgba(10, 13, 20, 0.85);
+    backdrop-filter: blur(16px);
+}
+
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.breadcrumb-nav a {
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-nav a:hover {
+    color: var(--primary-light);
+}
+
+.breadcrumb-separator {
+    color: var(--border-subtle);
+}
+
+/* Phase Navigation Bar (Top switcher) */
+.phase-nav-container {
+    overflow-x: auto;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.phase-nav-list {
+    display: flex;
+    gap: 0.65rem;
+    min-width: max-content;
+}
+
+.phase-nav-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: var(--radius-full);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    font-size: 0.813rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.phase-nav-item:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--primary);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.phase-nav-item.active {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+}
+
+/* Phase Hero Header */
+.phase-hero {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 13, 20, 0.4) 100%);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.phase-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--gradient-primary);
+}
+
+.phase-meta-badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.badge-phase-num {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--primary-light);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.813rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-duration {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--secondary);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.813rem;
+    font-weight: 600;
+}
+
+.badge-company {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.813rem;
+    font-weight: 500;
+}
+
+.phase-hero-title {
+    font-size: clamp(1.85rem, 3.5vw, 2.65rem);
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.phase-hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 850px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.scenario-callout {
+    background: rgba(17, 24, 39, 0.9);
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--secondary);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.25rem;
+}
+
+.scenario-callout strong {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   Phases Grid (2 Cards Per Row)
+   -------------------------------------------------------------------------- */
+.phases_grid_2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 868px) {
+    .phases_grid_2col {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.phase_tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1.5rem;
+}
+
+.phase_tags .work_tag {
+    font-size: 0.688rem;
+    padding: 0.16rem 0.5rem;
+    text-transform: lowercase;
+}
+
+/* Documentation Content Grid */
+.doc-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+    .doc-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Step Cards & Instructions */
+.step-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem;
+    margin-bottom: 2.5rem;
+    backdrop-filter: blur(12px);
+    transition: border-color var(--transition-normal);
+}
+
+.step-card:hover {
+    border-color: var(--border-hover);
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.step-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--gradient-primary);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.step-title {
+    font-size: 1.35rem;
+    color: #ffffff;
+}
+
+.step-rationale {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    line-height: 1.65;
+}
+
+/* Terminal & Code Blocks */
+.terminal-block {
+    background: #06090e;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    margin: 1.25rem 0;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.terminal-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #f59e0b; }
+.dot-green { background: #10b981; }
+
+.terminal-body {
+    padding: 1.25rem;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #e2e8f0;
+}
+
+.terminal-body pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.code-comment {
+    color: #64748b;
+    font-style: italic;
+}
+
+.code-cmd {
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.code-output {
+    color: #94a3b8;
+}
+
+/* Callout Boxes */
+.callout {
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.callout-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.callout-info {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    color: #e0e7ff;
+}
+.callout-info .callout-icon { color: var(--primary-light); }
+
+.callout-warning {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #fef3c7;
+}
+.callout-warning .callout-icon { color: #f59e0b; }
+
+.callout-success {
+    background: rgba(16, 185, 129, 0.08);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #d1fae5;
+}
+.callout-success .callout-icon { color: #10b981; }
+
+/* Sticky Sidebar Widget */
+.doc-sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+}
+
+.sidebar-title {
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.sidebar-list li {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-list li i {
+    color: var(--secondary);
+    font-size: 1rem;
+}
+
+.sidebar-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Phase Footer Navigation (Prev / Next) */
+.phase-footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.nav-prev-btn, .nav-next-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--radius-md);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    color: var(--text-primary);
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.nav-prev-btn:hover, .nav-next-btn:hover {
+    border-color: var(--border-hover);
+    background: rgba(99, 102, 241, 0.12);
+    color: #ffffff;
+}
+
+.nav-next-btn {
+    margin-left: auto;
+}
+
+/* Disabled State for Unreleased Phase Buttons */
+.btn:disabled,
+.btn.disabled,
+.phase_btn:disabled,
+.phase_btn.disabled {
+    opacity: 0.45;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    border-color: rgba(255, 255, 255, 0.12) !important;
+    color: var(--text-muted) !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    box-shadow: none !important;
+    transform: none !important;
+}

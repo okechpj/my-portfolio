@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1: Linux System Administration Capstone | 100 Days of DevOps</title>
+    <meta name="description"
+        content="Phase 1 of the 100 Days of DevOps Challenge - Linux System Administration Capstone for SavannaStack Technologies Ltd. 8 production engineering phases detailed on Medium.">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="challenge.css">
+</head>
+
+<body class="challenge-body">
+    <!-- Header Navigation -->
+    <header class="header challenge-header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav_logo">
+                <span class="logo_bracket">&lt;</span>Peter<span class="logo_accent">.dev</span><span
+                    class="logo_bracket">/&gt;</span>
+            </a>
+            <div class="nav_actions">
+                <a href="../index.html#devops-challenge" class="btn btn-outline btn-sm">
+                    <i class='bx bx-arrow-back'></i>
+                    <span>Back to Portfolio</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <br>
+
+        <!-- Phase Hero Header -->
+        <section class="phase-hero">
+
+            <h1 class="phase-hero-title">Linux System Administrator Project</h1>
+            <p class="phase-hero-desc">
+                The foundational track of the 100 Days of DevOps Challenge. A practical, end-to-end infrastructure
+                operations workbook covering 8 phases of production Linux engineering. Each phase includes a
+                comprehensive, step-by-step technical guide published on Medium.
+            </p>
+        </section>
+
+        <!-- Top Spotlight Card: Background Story -->
+        <div class="story_card" style="margin-bottom: 3rem;">
+            <div class="story_card_content">
+               
+                <h2 class="story_title">SavannahTech Technologies: The Infrastructure Journey</h2>
+                <p class="story_desc">
+                    Discover the enterprise backstory behind this capstone project. Learn about SavannahTech
+                    Technologies' real-world operational challenges in Nairobi, Kenya, the technical constraints of
+                    their scaling applications, and why this hands-on Linux administration architecture was
+                    commissioned.
+                </p>
+              
+            </div>
+            <div class="story_action">
+                <a href="https://medium.com/@okechpj/savannastack-infrastructure-journey-7cef34e25c76" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section Intro -->
+        <div class="section_header" style="margin-bottom: 2.5rem; text-align: left;">
+            
+            <h2 class="section_title" style="font-size: 2rem;">Hands-on Implementations</h2>
+            <div class="section_bar" style="margin: 0 1rem 4rem 0;"></div>
+           
+        </div>
+
+        <!-- 8 Phase Cards Grid (Twos Per Row) -->
+        <div class="phases_grid_2col">
+            <!-- Phase 1 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 01</span>
+                </div>
+                <h3 class="phase_card_title">Server Provisioning &amp; Linux Fundamentals</h3>
+                <p class="phase_card_desc">
+                    Establish host identity for <code>ss-app-01</code>, record baseline CPU/RAM metrics, install
+                    essential sysadmin utilities, and define standard company directory hierarchies.
+                </p>
+               
+                <a href="https://medium.com/@okechpj/savannastack-infrastructure-journey-phase-1-840ee4c1967e" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline phase_btn">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-link-external'></i>
+                </a>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 02</span>
+                </div>
+                <h3 class="phase_card_title">User, Group &amp; Permission Management</h3>
+                <p class="phase_card_desc">
+                    Implement departmental access control, configure collaborative project spaces, enforce least-privilege sudo, and manage account lifecycles.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 03</span>
+                </div>
+                <h3 class="phase_card_title">SSH, Networking &amp; Server Hardening</h3>
+                <p class="phase_card_desc">
+                    Configure authentication, disable root and password SSH logins safely, conduct socket
+                    audits, set up UFW firewall, and deploy Nginx.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 04</span>
+                </div>
+                <h3 class="phase_card_title">Disk, Filesystem &amp; LVM Administration</h3>
+                <p class="phase_card_desc">
+                    Decouple app data with LVM Physical Volumes, Volume Groups, and Logical Volumes. Configure
+                    persistent UUID mounts and demonstrate live online resizing.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 5 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 05</span>
+                </div>
+                <h3 class="phase_card_title">systemd Services &amp; App Deployment</h3>
+                <p class="phase_card_desc">
+                    Host an Nginx status dashboard, build a background health daemon, package it as an unprivileged
+                    systemd unit, and test automatic restart upon simulated process crashes.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 6 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 06</span>
+                </div>
+                <h3 class="phase_card_title">Backup &amp; Disaster Recovery</h3>
+                <p class="phase_card_desc">
+                    Automate backups with tar, gzip, and SHA256 checksums, schedule 02:00 AM cron execution, implement
+                    7-day retention pruning, and rehearse emergency restorations.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 7 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 07</span>
+                </div>
+                <h3 class="phase_card_title">Monitoring, Log Management &amp; Automation</h3>
+                <p class="phase_card_desc">
+                    Write telemetry scripts monitoring CPU, memory, and disks, generate warnings when disk usage exceeds
+                    80%, configure automated log rotation, and profile with vmstat.
+                </p>
+               
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+
+            <!-- Phase 8 -->
+            <div class="phase_card">
+                <div class="phase_card_header">
+                    <span class="phase_card_badge">Phase 08</span>
+                </div>
+                <h3 class="phase_card_title">Incident Response &amp; Acceptance Test</h3>
+                <p class="phase_card_desc">
+                    Troubleshoot 6 live production emergencies (port conflicts, permission denials, 100% full disks,
+                    backup failures, DNS drops) and compile Root Cause Analysis reports.
+                </p>
+                
+                <button type="button" class="btn btn-sm btn-outline phase_btn disabled" disabled aria-disabled="true" title="Article coming soon">
+                    <i class='bx bxl-medium'></i>
+                    <span>Read more</span>
+                    <i class='bx bx-lock-alt'></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer_bottom">
+            <p>&copy; 2026 Peter Okech • 100 Days of DevOps Challenge.</p>
+            <a href="../index.html#devops-challenge" class="back_to_top">
+                <span>Back to Portfolio</span>
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
