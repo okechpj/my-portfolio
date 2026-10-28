@@ -189,4 +189,85 @@ document.addEventListener('DOMContentLoaded', () => {
             revealObserver.observe(el);
         });
     }
+
+    // --------------------------------------------------------------------------
+    // 7. Constellation Canvas Animation for Projects Section
+    // --------------------------------------------------------------------------
+    const canvas = document.getElementById('projects-constellation');
+    if (canvas && canvas.getContext) {
+        const ctx = canvas.getContext('2d');
+        const parent = canvas.parentElement;
+
+        const resizeCanvas = () => {
+            if (!parent) return;
+            canvas.width = parent.offsetWidth;
+            canvas.height = parent.offsetHeight;
+        };
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas, { passive: true });
+
+        const count = Math.min(Math.floor((canvas.width * canvas.height) / 22000), 55);
+        const particles = [];
+        for (let i = 0; i < count; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                vx: (Math.random() - 0.5) * 0.45,
+                vy: (Math.random() - 0.5) * 0.45,
+                radius: Math.random() * 1.5 + 2.5
+            });
+        }
+
+        let isVisible = true;
+        if ('IntersectionObserver' in window && parent) {
+            const observer = new IntersectionObserver((entries) => {
+                isVisible = entries[0].isIntersecting;
+                if (isVisible) requestAnimationFrame(drawConstellation);
+            }, { threshold: 0.05 });
+            observer.observe(parent);
+        }
+
+        const maxDist = 140;
+        function drawConstellation() {
+            if (!isVisible) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < particles.length; i++) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < 0) p.x = canvas.width;
+                else if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                else if (p.y > canvas.height) p.y = 0;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(16, 185, 129, 0.75)';
+                ctx.fill();
+
+                for (let j = i + 1; j < particles.length; j++) {
+                    const p2 = particles[j];
+                    const dx = p.x - p2.x;
+                    const dy = p.y - p2.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < maxDist) {
+                        const alpha = (1 - dist / maxDist) * 0.28;
+                        ctx.beginPath();
+                        ctx.moveTo(p.x, p.y);
+                        ctx.lineTo(p2.x, p2.y);
+                        ctx.strokeStyle = `rgba(16, 185, 129, ${alpha})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            requestAnimationFrame(drawConstellation);
+        }
+
+        drawConstellation();
+    }
 });

@@ -16,10 +16,10 @@
 
     <title>Peter Okech | DevOps Engineer &amp; Software Developer</title>
 
-    <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+    <!-- Google Fonts: Inter & Newsreader -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -36,35 +36,40 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#home" class="nav_logo" id="nav-logo">
-                <span class="logo_bracket">&lt;</span>Peter<span class="logo_accent">.dev</span><span class="logo_bracket">/&gt;</span>
+                <span class="nav_logo_icon"><i class='bx bx-terminal'></i></span>
+                <span class="nav_logo_name">Peter Okech</span>
             </a>
 
             <div class="nav_menu" id="nav-menu">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
                     <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                    <li class="nav_item"><a href="#experience" class="nav_link">Experience</a></li>
                     <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
                     <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
-                    <li class="nav_item"><a href="#certifications" class="nav_link">Certifications</a></li>
+                    <li class="nav_item"><a href="#experience" class="nav_link">Experience</a></li>
                     <li class="nav_item"><a href="#devops-challenge" class="nav_link">DevOps Challenge</a></li>
                     <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
                 </ul>
                 <div class="nav_cta-mobile">
                     <a href="https://drive.google.com/file/d/1-QnQe_1xAJButBR60Yx5ib_nSE82CAk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-                        <i class='bx bx-file'></i>
+                        <i class='bx bx-download'></i>
                         <span>Resume</span>
                     </a>
-                    <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+                    <a href="#contact" class="btn btn-primary btn-sm">
+                        <i class='bx bx-envelope'></i>
+                        <span>Contact</span>
+                    </a>
                 </div>
             </div>
 
             <div class="nav_actions">
                 <a href="https://drive.google.com/file/d/1-QnQe_1xAJButBR60Yx5ib_nSE82CAk6/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm nav_cta-desktop">
-                    <i class='bx bx-file'></i>
+                    <i class='bx bx-download'></i>
                     <span>Resume</span>
                 </a>
-                <a href="#contact" class="btn btn-primary btn-sm nav_cta-desktop">Let's Talk</a>
+                <a href="#contact" class="btn btn-primary btn-sm nav_cta-desktop">
+                    <i class='bx bx-envelope'></i>
+                    <span>Contact</span>
+                </a>
                 <button class="nav_toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                     <i class='bx bx-menu' id="nav-toggle-icon"></i>
                 </button>
@@ -77,54 +82,127 @@
         <section class="hero section" id="home">
             <div class="container hero_container">
                 <div class="hero_content">
-                   
+                    <div class="hero_badge">
+                        <span class="badge_spark">⚡</span>
+                        <span>Available for new opportunities</span>
+                    </div>
 
                     <h1 class="hero_title">
-                        Hi, I'm <span class="gradient-text">Peter Okech</span><br>
-                        <span class="hero_subtitle">DevOps Engineer</span>
+                        Backend &amp;<br>
+                        <span class="hero_highlight">DevOps</span> Engineer
                     </h1>
 
                     <p class="hero_description">
-                        AWS-certified DevOps Engineer and Software Developer specializing in AWS cloud infrastructure, Terraform IaC, Docker containerization, CI/CD automation, and full-stack backend development with Python and Go.
+                        Building scalable systems and automating infrastructure to power applications.
                     </p>
 
-                    
-
                     <div class="hero_actions">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>Explore Projects</span>
+                        <a href="#contact" class="btn btn-primary">
+                            <i class='bx bx-envelope'></i>
+                            <span>Get In Touch</span>
                             <i class='bx bx-right-arrow-alt'></i>
                         </a>
-                        <a href="#experience" class="btn btn-secondary">
-                            <span>Experience</span>
-                            <i class='bx bx-briefcase-alt-2'></i>
+                        <a href="https://github.com/okechpj" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class='bx bxl-github'></i>
+                            <span>View GitHub</span>
                         </a>
                     </div>
 
-                    <div class="hero_social">
-                        <span class="social_label">Connect:</span>
-                        <div class="social_links">
-                            <a href="https://github.com/okechpj" target="_blank" rel="noopener noreferrer" class="social_link" aria-label="GitHub Profile" title="GitHub">
-                                <i class='bx bxl-github'></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/peter-okech-841966239" target="_blank" rel="noopener noreferrer" class="social_link" aria-label="LinkedIn Profile" title="LinkedIn">
-                                <i class='bx bxl-linkedin'></i>
-                            </a>
-                            <a href="https://x.com/PeterOkech8" target="_blank" rel="noopener noreferrer" class="social_link" aria-label="X (Twitter) Profile" title="X">
-                                <i class='bx bxl-twitter'></i>
-                            </a>
-                            <a href="mailto:okechpj@gmail.com" class="social_link" aria-label="Email Peter" title="Email">
-                                <i class='bx bx-envelope'></i>
-                            </a>
-                            <a href="tel:+254111566445" class="social_link" aria-label="Call Peter" title="+254 111 566 445">
-                                <i class='bx bx-phone'></i>
-                            </a>
+                    <div class="hero_stats">
+                        <div class="hero_stat_item">
+                            <span class="hero_stat_number">3+</span>
+                            <span class="hero_stat_label">Years Experience</span>
+                        </div>
+                        <div class="hero_stat_item">
+                            <span class="hero_stat_number">15+</span>
+                            <span class="hero_stat_label">Projects Delivered</span>
+                        </div>
+                        <div class="hero_stat_item">
+                            <span class="hero_stat_number">99.9%</span>
+                            <span class="hero_stat_label">Uptime Achieved</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero_visual">
-                   
+                    <div class="terminal_window">
+                        <div class="terminal_titlebar">
+                            <div class="terminal_dots">
+                                <span class="term_dot dot_red"></span>
+                                <span class="term_dot dot_yellow"></span>
+                                <span class="term_dot dot_green"></span>
+                            </div>
+                            <span class="terminal_title_text">terminal &mdash; bash</span>
+                        </div>
+                        <div class="terminal_screen">
+                            <div class="term_line">
+                                <span class="term_prompt">&#x2192; ~</span>
+                                <span class="term_cmd">kubectl get pods --all-namespaces</span>
+                            </div>
+                            <div class="term_table">
+                                <div class="term_row term_head">
+                                    <span>NAMESPACE</span>
+                                    <span>NAME</span>
+                                    <span>READY</span>
+                                    <span>STATUS</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_ns">production</span>
+                                    <span class="term_name">api-server-7d4b8f9c6d</span>
+                                    <span>3/3</span>
+                                    <span class="term_status_running">Running</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_ns">production</span>
+                                    <span class="term_name">database-5f7b8c9d6e</span>
+                                    <span>1/1</span>
+                                    <span class="term_status_running">Running</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_ns">monitoring</span>
+                                    <span class="term_name">prometheus-6c8d9e7f8g</span>
+                                    <span>2/2</span>
+                                    <span class="term_status_running">Running</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_ns">kube-system</span>
+                                    <span class="term_name">coredns-558bd4d5db</span>
+                                    <span>1/1</span>
+                                    <span class="term_status_running">Running</span>
+                                </div>
+                            </div>
+
+                            <div class="term_line term_mt">
+                                <span class="term_prompt">&#x2192; ~</span>
+                                <span class="term_cmd">docker ps</span>
+                            </div>
+                            <div class="term_table">
+                                <div class="term_row term_head">
+                                    <span>CONTAINER ID</span>
+                                    <span>IMAGE</span>
+                                    <span>STATUS</span>
+                                    <span>PORTS</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_cid">a1b2c3d4e5f6</span>
+                                    <span>nginx:alpine</span>
+                                    <span>Up 2 days</span>
+                                    <span class="term_port">80:8080</span>
+                                </div>
+                                <div class="term_row">
+                                    <span class="term_cid">f6e5d4c3b2a1</span>
+                                    <span>postgres:14</span>
+                                    <span>Up 2 days</span>
+                                    <span class="term_port">5432:5432</span>
+                                </div>
+                            </div>
+
+                            <div class="term_line term_mt">
+                                <span class="term_prompt">&#x2192; ~</span>
+                                <span class="term_cursor"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -136,9 +214,9 @@
             <div class="container">
                 <div class="section_header">
                     
-                    <h2 class="section_title">Work &amp; Leadership Experience</h2>
+                    <h2 class="section_title">Professional Journey</h2>
                     <div class="section_bar"></div>
-                    <p class="section_subtitle">Demonstrated impact across software development, cloud systems automation, and community leadership.</p>
+
                 </div>
 
                 <div class="timeline">
@@ -156,10 +234,10 @@
                                             <span>MtaaLex Solutions</span>
                                             <i class='bx bx-link-external'></i>
                                         </a>
-                                        <span class="timeline_location">• Nairobi, Kenya</span>
+                                        
                                     </div>
                                 </div>
-                                <span class="timeline_badge">2025 – 2026</span>
+                                <span class="timeline_badge">May 2026 – August 2026</span>
                             </div>
                             <p class="timeline_desc">
                                 Engineered and maintained an AI-enabled legal management enterprise platform leveraging Go, Vue.js, PostgreSQL, and AWS cloud infrastructure.
@@ -189,10 +267,10 @@
                                             <span>TherabotAI</span>
                                             <i class='bx bx-link-external'></i>
                                         </a>
-                                        <span class="timeline_location">• Nairobi, Kenya</span>
+                                       
                                     </div>
                                 </div>
-                                <span class="timeline_badge">2025</span>
+                                <span class="timeline_badge">January 2026 - March 2026</span>
                             </div>
                             <p class="timeline_desc">
                                 Built customer-facing frontend experiences and administrative tooling for AI-driven Voice platform.
@@ -202,6 +280,7 @@
                                 <span class="work_tag">React</span>
                                 <span class="work_tag">JavaScript</span>
                                 <span class="work_tag">UI/UX</span>
+                                <span class="work_tag">Node.js</span>
                             </div>
                         </div>
                     </div>
@@ -216,14 +295,14 @@
                                 <div>
                                     <h3 class="timeline_role">Cloud Lead &amp; Community Organizer</h3>
                                     <div class="timeline_company">
-                                        <a href="https://gdg.community.dev/gdg-on-campus-maseno-university-kisumu-kenya/" target="_blank" rel="noopener noreferrer" class="company_link">
+                                        <a href="https://drive.google.com/file/d/1_BPogc94D8Gg7penp4g7KOP4X5qj1ZWJ/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="company_link">
                                             <span>Google Developers Group on Campus (GDGoC)</span>
                                             <i class='bx bx-link-external'></i>
                                         </a>
-                                        <span class="timeline_location">• Maseno, Kenya</span>
+                                        
                                     </div>
                                 </div>
-                                <span class="timeline_badge"> 2024 – 2025</span>
+                                <span class="timeline_badge"> January 2024 – April 2025</span>
                             </div>
                             <p class="timeline_desc">
                                 Spearheaded cloud engineering initiatives and developer education for students and aspiring tech professionals.
@@ -231,7 +310,7 @@
                           
                             <div class="timeline_tags">
                                 <span class="work_tag">AWS</span>
-                                <span class="work_tag">DevOps Mentorship</span>
+                                <span class="work_tag">Mentorship</span>
                                 <span class="work_tag">Community Leadership</span>
                             </div>
                         </div>
@@ -245,10 +324,10 @@
                         <div class="timeline_content">
                             <div class="timeline_header">
                                 <div>
-                                    <h3 class="timeline_role">ICT Department Intern</h3>
+                                    <h3 class="timeline_role">ICT Intern</h3>
                                     <div class="timeline_company">
                                         <span class="company_name">University of Nairobi</span>
-                                        <span class="timeline_location">• Nairobi, Kenya</span>
+                                       
                                     </div>
                                 </div>
                                 <span class="timeline_badge">May 2024 – Aug 2024</span>
@@ -299,13 +378,30 @@
                         </a>
                     </div>
 
+                    <!-- Cert 3: ALX Professional Foundations -->
+                    <div class="cert_card">
+                        <div class="cert_header">
+                            <div class="cert_icon_box alx_badge">
+                                <i class='bx bx-award'></i>
+                            </div>
+                            <span class="cert_date">August 2025</span>
+                        </div>
+                        <h3 class="cert_title">Professional Foundations</h3>
+                        <p class="cert_issuer">ALX Africa</p>
+                        
+                        <a href="https://drive.google.com/file/d/1US6HTKA8xap7CToFHCP0gt1KuyJPqVz5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline cert_btn">
+                            <span>Verify Credential</span>
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
+
                     <!-- Cert 2: AWS AI Practitioner -->
                     <div class="cert_card">
                         <div class="cert_header">
                             <div class="cert_icon_box ai_badge">
                                 <i class='bx bx-brain'></i>
                             </div>
-                            <span class="cert_date">2026</span>
+                            <span class="cert_date">May 2026</span>
                         </div>
                         <h3 class="cert_title">AWS Certified AI Practitioner</h3>
                         <p class="cert_issuer">Amazon Web Services (AWS)</p>
@@ -316,22 +412,7 @@
                         </a>
                     </div>
 
-                    <!-- Cert 3: ALX Professional Foundations -->
-                    <div class="cert_card">
-                        <div class="cert_header">
-                            <div class="cert_icon_box alx_badge">
-                                <i class='bx bx-award'></i>
-                            </div>
-                            <span class="cert_date">2025</span>
-                        </div>
-                        <h3 class="cert_title">Professional Foundations</h3>
-                        <p class="cert_issuer">ALX Africa</p>
-                        
-                        <a href="https://drive.google.com/file/d/1US6HTKA8xap7CToFHCP0gt1KuyJPqVz5/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline cert_btn">
-                            <span>Verify Credential</span>
-                            <i class='bx bx-link-external'></i>
-                        </a>
-                    </div>
+                    
                 </div>
             </div>
         <!-- 100 Days of DevOps Challenge Section -->
@@ -339,9 +420,8 @@
             <div class="container">
                 <div class="section_header">
                   
-                    <h2 class="section_title">100 Days Of DevOps Challenge</h2>
+                    <h2 class="section_title">DevOps Challenge Articles</h2>
                     <div class="section_bar"></div>
-                    <p class="section_subtitle">A practical, multi-phase engineering challenge simulating production infrastructure operations, cloud architecture, and modern DevOps pipelines.</p>
                 </div>
 
                 <!-- Independent Top Card: SavannahTech Technologies Background Story -->
@@ -353,7 +433,7 @@
                         </div>
                         <h3 class="story_title">SavannahTech Technologies: The Infrastructure Journey</h3>
                         <p class="story_desc">
-                            Discover the enterprise background story that powers this entire DevOps challenge. Learn about SavannahTech Technologies' real-world operational challenges in Nairobi, Kenya, the technical obstacles faced by their engineering team, and the architectural mission that kicked off this hands-on capstone.
+                            This article series is about transforming SavannaStack Technologies' infrustructure from manual operations using linux commands on a single server to automating configurations, infrustructure provisioning and deployments using CI/CD, containers and cloud services. 
                         </p>
                        
                     </div>
@@ -375,7 +455,7 @@
                         </div>
                         <h3 class="phase_card_title">Linux System Administration</h3>
                         <p class="phase_card_desc">
-                            Production-grade Linux systems administration for SavannahTech Technologies. 
+                            Linux systems administration for SavannahTech Technologies. 
                         </p>
                         <div class="phase_tags">
                             <span class="work_tag">linux</span>
@@ -386,12 +466,36 @@
                         </div>
                         <a href="challenge/linux.html" class="btn btn-primary btn-sm phase_btn">
                             <i class='bx bx-layer'></i>
+                            <span>Read article</span>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                    </div>
+
+                     <!-- 2. Ansible Track (Active Capstone) -->
+                    <div class="phase_card" style="border-color: rgba(99, 102, 241, 0.45); box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);">
+                        <div class="phase_card_header">
+                            <span class="phase_card_badge" style="background: rgba(99, 102, 241, 0.2); color: #a5b4fc;">Ansible</span>
+                            <span class="phase_card_duration"><i class='bx bx-layer'></i> Ansible</span>
+                        </div>
+                        <h3 class="phase_card_title">Ansible Automation</h3>
+                        <p class="phase_card_desc">
+                            Ansible Automation for SavannahTech Technologies. 
+                        </p>
+                        <div class="phase_tags">
+                            <span class="work_tag">Ansible</span>
+                            <span class="work_tag">Automation</span>
+                            <span class="work_tag">Configuration Management</span>
+                            <span class="work_tag">Orchestration</span>
+                            <span class="work_tag">YAML</span>
+                        </div>
+                        <a href="challenge/linux.html" class="btn btn-primary btn-sm phase_btn">
+                            <i class='bx bx-layer'></i>
                             <span>Explore</span>
                             <i class='bx bx-right-arrow-alt'></i>
                         </a>
                     </div>
 
-                    <!-- 2. Terraform Track -->
+                    <!-- 3. Terraform Track -->
                     <div class="phase_card">
                         <div class="phase_card_header">
                             <span class="phase_card_badge">Terraform</span>
@@ -494,132 +598,161 @@
 
         <!-- Projects Section -->
         <section class="work section" id="projects">
-            <div class="container">
-                <div class="section_header">
-                    <h2 class="section_title">Hands-on Cloud &amp; Software Projects</h2>
+            <canvas id="projects-constellation" class="projects_canvas"></canvas>
+            <div class="section_header">
+                  
+                    <h2 class="section_title">My Projects</h2>
                     <div class="section_bar"></div>
                 </div>
+            <div class="container">
+                
+                <!-- Featured Projects Grid -->
+                <div class="featured_projects_grid">
+                    <!-- Featured Project 1: MtaaLex Platform -->
+                    <article class="featured_project_card">
+                        <h3 class="featured_card_title">MtaaLex AI Law Firm Platform</h3>
 
-                <div class="work_grid">
-                    <!-- Project 1: AWS Autoscaling & IaC -->
-                    <article class="work_card">
-                        <div class="work_img_box">
-                            <img src="images/projects/aws_terraform.jpg" alt="AWS Autoscaling and Highly Available Infrastructure with Terraform" class="work_img" loading="lazy">
-                            <div class="work_overlay">
-                                <a href="https://github.com/okechpj/terraform-auto-scaling-highly-available-architecture" target="_blank" rel="noopener noreferrer" class="work_overlay_btn" aria-label="View GitHub Repository for AWS Autoscaling Project">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </div>
+                        <p class="featured_card_desc">
+                            Engineered an enterprise AI platform automating case lifecycles, client onboarding, document creation, and legal billing. Reduced administrative workload by 6 hours/week across 17 active law firms in Kenya.
+                        </p>
+
+                        <div class="featured_tags">
+                            <span class="featured_tag">Golang</span>
+                            <span class="featured_tag">Vue.js</span>
+                            <span class="featured_tag">PostgreSQL</span>
+                            <span class="featured_tag">AWS</span>
+                            <span class="featured_tag">Docker</span>
+                            <span class="featured_tag">REST APIs</span>
                         </div>
-                        <div class="work_content">
-                            <div class="work_tags">
-                                <span class="work_tag">AWS</span>
-                                <span class="work_tag">Terraform</span>
-                                <span class="work_tag">EC2 &amp; ALB</span>
-                                <span class="work_tag">IaC</span>
-                            </div>
-                            <h3 class="work_title">AWS Autoscaling &amp; High-Availability IaC</h3>
-                            <p class="work_description">
-                                Designed and provisioned a highly available, auto-scaling AWS infrastructure strictly using Terraform. Configured Application Load Balancers, Multi-AZ Auto Scaling groups, custom VPC subnets, and cloud monitoring following IaC industry best practices.
-                            </p>
-                            <div class="work_links">
-                                <a href="https://github.com/okechpj/terraform-auto-scaling-highly-available-architecture" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class='bx bxl-github'></i>
-                                    <span>GitHub Repository</span>
-                                </a>
-                            </div>
+
+                        <div class="featured_card_actions">
+                            <a href="https://github.com/okechpj" target="_blank" rel="noopener noreferrer" class="btn_view_code">
+                                <i class='bx bx-git-repo-forked'></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="https://mtaalexsolutions.co.ke" target="_blank" rel="noopener noreferrer" class="btn_live_demo">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live Demo</span>
+                            </a>
                         </div>
                     </article>
 
-                    <!-- Project 2: MtaaLex Law Firm Management Platform -->
-                    <article class="work_card">
-                        <div class="work_img_box">
-                            <img src="images/projects/mtaalex_platform.jpg" alt="MtaaLex Law Firm Management Enterprise System" class="work_img" loading="lazy">
-                            <div class="work_overlay">
-                                <a href="https://mtaalexsolutions.co.ke" target="_blank" rel="noopener noreferrer" class="work_overlay_btn" aria-label="Visit MtaaLex Platform Website">
-                                    <i class='bx bx-link-external'></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work_content">
-                            <div class="work_tags">
-                                <span class="work_tag">Golang</span>
-                                <span class="work_tag">Vue.js</span>
-                                <span class="work_tag">PostgreSQL</span>
-                                <span class="work_tag">AWS</span>
-                            </div>
-                            <h3 class="work_title">MtaaLex AI Law Firm Management Platform</h3>
-                            <p class="work_description">
-                                Production AI-enabled legal platform automating case lifecycle, client onboarding, document creation, and billing. Helped reduce administrative time by 6 hours/week and cut required manpower by 40% across 17 law firms.
-                            </p>
-                            <div class="work_links">
-                                <a href="https://mtaalexsolutions.co.ke" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <span>Live Platform</span>
-                                    <i class='bx bx-right-top-arrow-circle'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                    <!-- Featured Project 2: Jamii Sasa Platform -->
+                    <article class="featured_project_card">
+                        <h3 class="featured_card_title">Jamii Sasa Platform</h3>
 
-                    <!-- Project 3: Dockerized Flask Application -->
-                    <article class="work_card">
-                        <div class="work_img_box">
-                            <img src="images/projects/docker_flask.jpg" alt="Dockerized Flask Application with PostgreSQL and Docker Compose" class="work_img" loading="lazy">
-                            <div class="work_overlay">
-                                <a href="https://github.com/okechpj/flask-postgres-docker-compose" target="_blank" rel="noopener noreferrer" class="work_overlay_btn" aria-label="View Docker Flask Repository">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="work_content">
-                            <div class="work_tags">
-                                <span class="work_tag">Docker</span>
-                                <span class="work_tag">Docker Compose</span>
-                                <span class="work_tag">Python / Flask</span>
-                                <span class="work_tag">PostgreSQL</span>
-                            </div>
-                            <h3 class="work_title">Dockerized Full-Stack Flask &amp; PostgreSQL</h3>
-                            <p class="work_description">
-                                Built a complete full-stack web application with authentication and PostgreSQL persistence. Orchestrated multi-container deployment using Docker and Docker Compose, implemented Bcrypt password hashing, and resolved containerized network configurations.
-                            </p>
-                            <div class="work_links">
-                                <a href="https://github.com/okechpj/flask-postgres-docker-compose" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class='bx bxl-github'></i>
-                                    <span>GitHub Repository</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+                        <p class="featured_card_desc">
+                            A community-driven digital platform and services ecosystem built with Go microservices, responsive web architecture, and secure local transaction flows.
+                        </p>
 
-                    <!-- Project 4: Django CI/CD Pipeline with Jenkins -->
-                    <article class="work_card">
-                        <div class="work_img_box">
-                            <img src="images/projects/proj6.jpeg" alt="Django CI/CD Pipeline with Jenkins Integration" class="work_img" loading="lazy">
-                            <div class="work_overlay">
-                                <a href="https://github.com/okechpj/django-jenkins-demo" target="_blank" rel="noopener noreferrer" class="work_overlay_btn" aria-label="View Django Jenkins Repository">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </div>
+                        <div class="featured_tags">
+                            <span class="featured_tag">Golang</span>
+                            <span class="featured_tag">Microservices</span>
+                            <span class="featured_tag">PostgreSQL</span>
+                            <span class="featured_tag">AWS</span>
+                            <span class="featured_tag">Docker</span>
+                            <span class="featured_tag">REST APIs</span>
                         </div>
-                        <div class="work_content">
-                            <div class="work_tags">
-                                <span class="work_tag">Jenkins</span>
-                                <span class="work_tag">Django</span>
-                                <span class="work_tag">CI/CD Pipeline</span>
-                                <span class="work_tag">Automation</span>
-                            </div>
-                            <h3 class="work_title">Django CI/CD Pipeline with Jenkins</h3>
-                            <p class="work_description">
-                                Configured an automated Continuous Integration and Continuous Deployment pipeline using Jenkins for a Django web application. Implemented automated testing, lint verification, build triggers, and deployment automation for Python applications.
-                            </p>
-                            <div class="work_links">
-                                <a href="https://github.com/okechpj/django-jenkins-demo" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                                    <i class='bx bxl-github'></i>
-                                    <span>GitHub Repository</span>
-                                </a>
-                            </div>
+
+                        <div class="featured_card_actions">
+                            <a href="https://github.com/okechpj" target="_blank" rel="noopener noreferrer" class="btn_view_code">
+                                <i class='bx bx-git-repo-forked'></i>
+                                <span>View Code</span>
+                            </a>
+                            <a href="https://jamiisasa.co.ke" target="_blank" rel="noopener noreferrer" class="btn_live_demo">
+                                <i class='bx bx-link-external'></i>
+                                <span>Live Demo</span>
+                            </a>
                         </div>
                     </article>
+                </div>
+
+                <!-- Other Notable Projects Subsection -->
+                <div class="notable_projects_section">
+                    <h3 class="notable_section_heading">Other Notable Projects</h3>
+
+                    <div class="notable_projects_grid">
+                        <!-- Notable Project 1: AWS Autoscaling & IaC -->
+                        <article class="notable_project_card">
+                            <div class="notable_icon_box">
+                                <i class='bx bx-code-alt'></i>
+                            </div>
+                            <div class="notable_card_content">
+                                <h4 class="notable_card_title">AWS Autoscaling &amp; High-Availability IaC</h4>
+                                <p class="notable_card_desc">
+                                    Designed and provisioned a multi-AZ, auto-scaling AWS infrastructure strictly using Terraform. Configured Application Load Balancers, Multi-AZ Auto Scaling groups, custom VPC subnets, and CloudWatch metrics following production IaC standards.
+                                </p>
+                                <div class="notable_tags">
+                                    <span class="notable_tag">AWS</span>
+                                    <span class="notable_tag">Terraform</span>
+                                    <span class="notable_tag">EC2 &amp; ALB</span>
+                                    <span class="notable_tag">Auto Scaling</span>
+                                </div>
+                                <div class="notable_actions">
+                                    <a href="https://github.com/okechpj/terraform-auto-scaling-highly-available-architecture" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                        <i class='bx bx-git-repo-forked'></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://github.com/okechpj/terraform-auto-scaling-highly-available-architecture" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Notable Project 2: Dockerized Flask -->
+                        <article class="notable_project_card">
+                            <div class="notable_icon_box">
+                                <i class='bx bx-code-alt'></i>
+                            </div>
+                            <div class="notable_card_content">
+                                <h4 class="notable_card_title">Dockerized Full-Stack Flask &amp; PostgreSQL</h4>
+                                <p class="notable_card_desc">
+                                    Full-stack web application with Bcrypt authentication and PostgreSQL persistence. Orchestrated multi-container deployment and isolated networking using Docker Compose.
+                                </p>
+                                <div class="notable_tags">
+                                    <span class="notable_tag">Docker</span>
+                                    <span class="notable_tag">Docker Compose</span>
+                                    <span class="notable_tag">Python</span>
+                                    <span class="notable_tag">PostgreSQL</span>
+                                </div>
+                                <div class="notable_actions">
+                                    <a href="https://github.com/okechpj/flask-postgres-docker-compose-.git" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                        <i class='bx bx-git-repo-forked'></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://github.com/okechpj/flask-postgres-docker-compose-.git" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Notable Project 3: Django Jenkins CI/CD -->
+                        <article class="notable_project_card">
+                            <div class="notable_icon_box">
+                                <i class='bx bx-code-alt'></i>
+                            </div>
+                            <div class="notable_card_content">
+                                <h4 class="notable_card_title">Django CI/CD Pipeline with Jenkins</h4>
+                                <p class="notable_card_desc">
+                                    Automated Continuous Integration and Continuous Deployment pipeline using Jenkins for a Django web application, including automated unit tests, lint checks, and deployment triggers.
+                                </p>
+                                <div class="notable_tags">
+                                    <span class="notable_tag">Jenkins</span>
+                                    <span class="notable_tag">Django</span>
+                                    <span class="notable_tag">CI/CD</span>
+                                    <span class="notable_tag">Automation</span>
+                                </div>
+                                <div class="notable_actions">
+                                    <a href="https://github.com/okechpj/django-jenkins-demo" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                        <i class='bx bx-git-repo-forked'></i>
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://github.com/okechpj/django-jenkins-demo" target="_blank" rel="noopener noreferrer" class="notable_action_link">
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -631,7 +764,7 @@
                 <div class="section_header">
                     <h2 class="section_title">Skills &amp; Technologies</h2>
                     <div class="section_bar"></div>
-                    <p class="section_subtitle">A disciplined toolkit tailored for cloud architecture, DevOps automation, and robust software engineering.</p>
+                    
                 </div>
 
                 <div class="skills_categories">
@@ -698,7 +831,7 @@
                         <div class="category_header">
                             <div class="category_icon"><i class='bx bx-layout'></i></div>
                             <div>
-                                <h3 class="category_title">Frontend &amp; Leadership</h3>
+                                <h3 class="category_title">Frontend </h3>
                                 <p class="category_sub">UI frameworks, teamwork &amp; community mentorship</p>
                             </div>
                         </div>
@@ -751,7 +884,7 @@
                                 <div class="contact_icon"><i class='bx bx-map-pin'></i></div>
                                 <div>
                                     <span class="contact_item_label">Location</span>
-                                    <span class="contact_item_val">Nairobi &amp; Kisumu, Kenya (Remote / Relocation)</span>
+                                    <span class="contact_item_val">Nairobi, Kenya </span>
                                 </div>
                             </div>
 

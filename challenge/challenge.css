@@ -14,7 +14,7 @@
 
 .challenge-header {
     border-bottom: 1px solid var(--border-subtle);
-    background: rgba(10, 13, 20, 0.85);
+    background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(16px);
 }
 
@@ -33,7 +33,7 @@
 }
 
 .breadcrumb-nav a:hover {
-    color: var(--primary-light);
+    color: var(--primary);
 }
 
 .breadcrumb-separator {
@@ -60,7 +60,7 @@
     gap: 0.4rem;
     padding: 0.45rem 1rem;
     border-radius: var(--radius-full);
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
     font-size: 0.813rem;
     font-weight: 600;
@@ -70,28 +70,29 @@
 }
 
 .phase-nav-item:hover {
-    background: rgba(99, 102, 241, 0.15);
+    background: var(--primary-subtle);
     border-color: var(--primary);
-    color: #ffffff;
+    color: var(--primary);
     transform: translateY(-2px);
 }
 
 .phase-nav-item.active {
-    background: var(--gradient-primary);
+    background: var(--primary);
     border-color: transparent;
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+    box-shadow: 0 4px 15px rgba(5, 150, 105, 0.3);
 }
 
 /* Phase Hero Header */
 .phase-hero {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.8) 0%, rgba(10, 13, 20, 0.4) 100%);
+    background: #ffffff;
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
     padding: 2.5rem;
     margin-bottom: 3rem;
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-card);
 }
 
 .phase-hero::before {
@@ -113,9 +114,9 @@
 }
 
 .badge-phase-num {
-    background: rgba(99, 102, 241, 0.15);
-    color: var(--primary-light);
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    background: var(--primary-subtle);
+    color: #047857;
+    border: 1px solid var(--primary-border);
     padding: 0.35rem 0.85rem;
     border-radius: var(--radius-full);
     font-size: 0.813rem;
@@ -125,9 +126,9 @@
 }
 
 .badge-duration {
-    background: rgba(6, 182, 212, 0.15);
+    background: #f0fdfa;
     color: var(--secondary);
-    border: 1px solid rgba(6, 182, 212, 0.3);
+    border: 1px solid #99f6e4;
     padding: 0.35rem 0.85rem;
     border-radius: var(--radius-full);
     font-size: 0.813rem;
@@ -135,7 +136,7 @@
 }
 
 .badge-company {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--bg-secondary);
     color: var(--text-muted);
     border: 1px solid var(--border-subtle);
     padding: 0.35rem 0.85rem;
@@ -147,7 +148,7 @@
 .phase-hero-title {
     font-size: clamp(1.85rem, 3.5vw, 2.65rem);
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .phase-hero-desc {
@@ -159,16 +160,16 @@
 }
 
 .scenario-callout {
-    background: rgba(17, 24, 39, 0.9);
+    background: var(--bg-secondary);
     border: 1px solid var(--border-subtle);
-    border-left: 4px solid var(--secondary);
+    border-left: 4px solid var(--primary);
     border-radius: var(--radius-md);
     padding: 1.25rem 1.5rem;
     margin-top: 1.25rem;
 }
 
 .scenario-callout strong {
-    color: var(--secondary);
+    color: var(--primary);
     font-size: 0.875rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
